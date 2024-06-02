@@ -1,0 +1,65 @@
+#ifndef SIMONGAMESCENE_H
+#define SIMONGAMESCENE_H
+
+#include <QGraphicsScene>
+#include <QTimer>
+#include <QElapsedTimer>
+#include <QSoundEffect>
+#include <QTime>
+#include <QFont>
+#include <QGraphicsSimpleTextItem>
+#include "simongame.h"
+#include "rectitem.h"
+
+class SimonGameScene : public QGraphicsScene
+{
+    Q_OBJECT
+public:
+    explicit SimonGameScene(QObject *parent = nullptr);
+
+signals:
+    void changePattern();
+private slots:
+    void loop();
+    void nextPossibleAnim();
+public slots:
+    void setPattern();
+private:
+    void drawInfoText();
+    void drawScoreText();
+    void drawStatusText();
+    void drawButtons();
+
+    void changeBackgroundColor();
+    QString getButtonClicked(QPointF clickedPoint);
+    void flashButtonAnimation(QString color);
+    void checkClickedPosition();
+
+    QTimer m_timer;
+    QElapsedTimer m_elapsedTimer;
+    float m_deltaTime, m_loopTime;
+    const float m_loopSpeed;
+    QStringList m_pattern;
+
+    int m_currentStep;
+    QTime m_lastClickTime;
+
+    int m_score;
+    bool m_waitingForInput;
+    QFont m_basicFont;
+    int m_currentAnim;
+
+    QString m_clickedPoint;
+    const QString MOVE_PATTERN[4];
+    // QGraphicsScene interface
+    QGraphicsSimpleTextItem *m_scoreText;
+    QGraphicsSimpleTextItem *m_statusText;
+    RectItem *m_yellowRectItem, *m_redRectItem, *m_greenRectItem, *m_blueRectItem;
+    void activeGameOver();
+
+protected:
+    virtual void keyPressEvent(QKeyEvent *event) override;
+    virtual void mousePressEvent(QGraphicsSceneMouseEvent *event) override;
+};
+
+#endif // GAMESCENE_H

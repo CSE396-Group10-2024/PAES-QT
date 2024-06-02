@@ -1,0 +1,63 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>img/bejeweled.png</file>
+        <file>img/minesweeper.png</file>
+        <file>img/simon.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>images/background.png</file>
+        <file>images/cursor.png</file>
+        <file>images/frame.png</file>
+        <file>images/gems.png</file>
+        <file>images/numbers.png</file>
+        <file>images/score.png</file>
+        <file>res/beep1.wav</file>
+        <file>res/beep2.wav</file>
+        <file>res/beep3.wav</file>
+        <file>res/beep4.wav</file>
+        <file>res/cursor.png</file>
+        <file>res/freesansbold.ttf</file>
+        <file>images/face.png</file>
+        <file>images/tiles.png</file>
+        <file>res/line.png</file>
+        <file>res/pentagon.png</file>
+        <file>res/rectangle.png</file>
+        <file>res/triangle.png</file>
+        <file>res/circle.jpeg</file>
+        <file>res/line_copy.png</file>
+        <file>res/triangle_copy.png</file>
+        <file>bejewgame.cpp</file>
+        <file>res/pentagon_copy.png</file>
+        <file>res/rectangle_copy.png</file>
+        <file>images/9a1ab396-c9a8-4901-a7b1-bae22d3f19e7.jpeg</file>
+        <file>images/990116f6-f26c-4412-9240-1ca040a021df.jpeg</file>
+        <file>images/e20f0fbd-9bd1-4ded-9c3a-8078daa1997d.jpeg</file>
+        <file>images/95e6bd373dd49b383ff38e32b43e048d.jpg</file>
+        <file>images/95e6bd373dd49b383ff38e32b43e048d (1).jpg</file>
+        <file>images/6ip5XkpXT.png</file>
+        <file>images/hand</file>
+        <file>images/Medical-logo-design-Graphics-5262814-1.jpg</file>
+        <file>images/kollar.jpeg</file>
+        <file>exercise_images/neck.jpeg</file>
+        <file>exercise_images/open_arms.jpeg</file>
+        <file>exercise_images/raise_arms.jpeg</file>
+        <file>exercise_images/raise_knees.jpeg</file>
+        <file>exercise_images/raise_legs.jpeg</file>
+        <file>exercise_images/squat.jpeg</file>
+        <file>images/pen.png</file>
+        <file>images/a.jpeg</file>
+        <file>images/b.jpeg</file>
+        <file>images/c.jpeg</file>
+        <file>images/d.jpeg</file>
+        <file>images/login.jpeg</file>
+        <file>images/left_head.jpeg</file>
+        <file>images/right_head.jpeg</file>
+        <file>images/sag_diz.jpeg</file>
+        <file>images/sag_kol.jpeg</file>
+        <file>images/sol_diz.jpeg</file>
+        <file>images/sol_kol.jpeg</file>
+        <file>images/squat.jpeg</file>
+        <file>images/t_pose.jpeg</file>
+        <file>images/zombie.jpeg</file>
+    </qresource>
+</RCC>
